@@ -1,0 +1,2 @@
+The pre-processed USC-HAD dataset can be downloaded:
+https://www.dropbox.com/s/ryouywy7hpnub0s/USC_HAD.zip?dl=0
