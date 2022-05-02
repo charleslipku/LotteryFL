@@ -1,6 +1,6 @@
-# LotteryFL: Personalized and Communication-Efficient Federated Learning with Lottery Ticket Hypothesis on Non-IID Datasets
+# LotteryFL: Empower Edge Intelligence with Personalized and Communication-Efficient Federated Learning
 
-This repository is the official implementation of "LotteryFL: Personalized and Communication-Efficient Federated Learning with Lottery Ticket Hypothesis on Non-IID Datasets". 
+This repository is the official implementation of "[LotteryFL: Empower Edge Intelligence with Personalized and Communication-Efficient Federated Learning](https://ieeexplore.ieee.org/abstract/document/9708944)". 
 
 
 ## Requirements
@@ -52,7 +52,7 @@ python lotteryFL.py --dataset=HAR --prune_percent=30 --prune_start_acc=0.7 --mod
 
 To run FedAvg, use fedavg.py with the same arguments(The useless arguments for FedAvg would be ignored).
 
-important options:
+<u>**important options:**</u>
 ```
 --prune_percent:    fixed pruning rate r_p
 --prune_start_acc:  acc_threshold
@@ -63,7 +63,7 @@ important options:
 --num_users:        number of users (not larger than 30 for HAR)
 ```
 
-Comments:
+**Comments:**
 
 Current version of code might prune the local models slightly sparser than "prune_end_rate" because of the logic in line 138 of lotteryFL.py. But it does not hurt significantly.
 
