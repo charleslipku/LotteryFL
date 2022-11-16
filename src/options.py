@@ -15,7 +15,7 @@ def args_parser():
                         help="number of users: K")
     parser.add_argument('--frac', type=float, default=0.1,
                         help='the fraction of clients: C')
-    parser.add_argument('--local_ep', type=int, default=10,
+    parser.add_argument('--local_ep', type=int, default=60,
                         help="the number of local epochs: E")
     parser.add_argument('--local_bs', type=int, default=10,
                         help="local batch size: B")
@@ -52,7 +52,7 @@ def args_parser():
     # pruning arguments
     parser.add_argument('--prune_percent', type=float, default=10,
                         help='pruning percent')
-    parser.add_argument('--prune_start_acc', type=float, default=0.8,
+    parser.add_argument('--prune_start_acc', type=float, default=0.2,
                         help='pruning start acc')
     parser.add_argument('--prune_end_rate', type=float, default=0.5,
                         help='pruning end rate')

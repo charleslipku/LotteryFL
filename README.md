@@ -30,19 +30,19 @@ USC-HAD (--HAD)
 To train the model(s) with Non-iid MNIST Dataset in the paper, run this command:
 
 ```train
-python lotteryFL.py --model=cnn --dataset=mnist_extr_noniid --gpu=1 --iid=0 --epochs=400 --prune_percent=20 --prune_start_acc=0.5 --prune_end_rate=0.1 --lr=0.01 --local_bs=32 --num_users=400 --frac=0.05 --nclass=2 --nsamples=20 --rate_unbalance=1.0
+python lotteryFL.py --model=cnn --dataset=mnist_extr_noniid --gpu=1 --iid=0 --epochs=400 --prune_percent=20 --local_ep=60 --prune_start_acc=0.2 --prune_end_rate=0.1 --lr=0.01 --local_bs=32 --num_users=400 --frac=0.05 --nclass=2 --nsamples=20 --rate_unbalance=1.0
 ```
 
 To train the model(s) with Non-iid CIFAR10 Dataset in the paper, run this command:
 
 ```train
-python lotteryFL.py --model=cnn --dataset=cifar10_extr_noniid --gpu=1 --iid=0 --epochs=2000 --prune_percent=20 --prune_start_acc=0.1 --prune_end_rate=0.5 --lr=0.01 --local_bs=32 --num_users=400 --frac=0.05 --nclass=2 --nsamples=20 --rate_unbalance=1.0
+python lotteryFL.py --model=cnn --dataset=cifar10_extr_noniid --gpu=1 --iid=0 --epochs=2000 --prune_percent=20 --local_ep=60 --prune_start_acc=0.2 --prune_end_rate=0.5 --lr=0.01 --local_bs=32 --num_users=400 --frac=0.05 --nclass=2 --nsamples=20 --rate_unbalance=1.0
 ```
 
 To train the model(s) with EMNIST Dataset in the paper, run this command:
 
 ```train
-python lotteryFL.py --model=cnn --dataset=femnist --gpu=1 --iid=0 --epochs=2000 --prune_percent=20 --prune_start_acc=0.5 --prune_end_rate=0.1 --lr=0.01 --local_bs=32 --num_users=2424 --frac=0.05
+python lotteryFL.py --model=cnn --dataset=femnist --gpu=1 --iid=0 --epochs=2000 --prune_percent=20 --prune_start_acc=0.2 --local_ep=60 --prune_end_rate=0.1 --lr=0.01 --local_bs=32 --num_users=2424 --frac=0.05
 ```
 
 To train the model(s) with HAR Dataset, run this command:

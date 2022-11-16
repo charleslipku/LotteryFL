@@ -86,7 +86,7 @@ if __name__ == '__main__':
 
     # copy weights
     global_weights = global_model.state_dict()
-    init_weights = global_model.state_dict()
+    init_weights = copy.deepcopy(global_model.state_dict())
 
     #make masks
     masks = []
